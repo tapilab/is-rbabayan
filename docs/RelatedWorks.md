@@ -10,7 +10,7 @@
 
 While I have not found a very closely related work that focuses on identifying immigrants on social networks, I could find a set of researches done about geo-locating tweets and web contents based on their textual content. The hope is that the location of the users and the fact that there has been a major change throughout the history of their tweets, might lead us to determine if they have immigrated or not. 
 
-	**1.You are where you tweet: A content-based approach to geo-locating twitter users**
+	_1.You are where you tweet: A content-based approach to geo-locating twitter users_
 	Authors: Zhiyuan Cheng, James Caverlee, Kyumin Lee 
 	In the proceedings of 19th ACM international Conference on Information and Knowledge Management, 2010, Toronto 
 
