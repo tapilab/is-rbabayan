@@ -33,8 +33,7 @@ We are facing different type of issues in this topic.
 
 
 How will it be evaluated?
-
-Needs further discussion
+/b Needs further discussion b/
 
 Rough timeline (also add milestones)
 
@@ -46,5 +45,6 @@ Rough timeline (also add milestones)
 	6. Documentation
 
 References
+
 [1] Zhiyuan Cheng, James Caverlee, Kyumin Lee, “You are where you tweet: a content-based approach to geo-locating Twitter users”, CIKM’10, Toronto, Canada, 2010
 [2] Jason D. Carr, “Measuring Twitter Sentiment and Implications for Social Psychological Research”, American Journal of Applied Psychology, 2014, Vol. 2, No. 5, 109-113
