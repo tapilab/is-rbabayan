@@ -1,5 +1,3 @@
-1/18/2016
-
 #Topic: What is the relation between depression and immigration based on users’ tweets
 
 ##I splitted the project topic into two major questions:
@@ -30,8 +28,40 @@ While I have not found a very closely related work that focuses on identifying i
 
 	The goal of this research is to geotag web-pages based on their contents. The approach is to identify keywords in the web-pages that might be associated with different places. However, the challenge targeted in this paper is to resolve ambiguities such as those keywords that might represent different locations, and those that represent both location and non-location meanings. In order to do so, the whole contents of the page is involved in their proposed algorithm to give a score to each potential location for the web-page. 
 
+	8. An Empirical Study of Geographic User Activity Patterns in Foursquare
+	Authors: Anastasios Noulas, Salvatore Scellato, Cecilia Mascolo, Massimiliano Pontil
+	Association for the Advancement of Artificial Intelligence, 2011
 
-###Related works in regard to identifying social behavioral and psychological features of users on Twitter:
+	The research studies users’ activities on Foursquare social network where users are able to check in their locations. The study attempts to identify a correlation between the location of the users and their activities to build a framework for a potential recommendation system. Geolocating the users are solely based on the coordination of the users that they set manually by checking in on the app. This is similar to Twitter’s tweets location. However, Twitter users tend to turn off their location more than Foursquare users. 
+
+
+	9.Exploring Millions of Footprints in Location Sharing Services
+	Authors: Zhiyuan Cheng, James Caverlee, Kyumin Lee, Daniel Z. Sui
+	Association for the Advancement of Artificial Intelligence, 2011
+
+	The focus of this research is location based social network such as Foursquare, and Facebook to study the locations of social network users with a goal of building a human mobility pattern. This study also considers the manually set check-ins from the users in social networks for to identify the location of the users. This is how their approach is different from content-based geo-location systems. 
+
+	10. A Tale of Many Cities: Universal Patterns in Human Urban Mobility
+	Authors:  Anastasios Noulas ,Salvatore Scellato,Renaud Lambiotte,Massimiliano Pontil,Cecilia Mascolo
+	PloS one 7, no. 5 (2012)
+
+	This is yet a another research in shaping human mobility based on their locations on social networks. Again, the locations are based on what the users manually set by checking in on social networks such as Foursquare and Facebook. The result of the paper is a proposed model for human mobility patterns in urban metropolitan cities. 
+
+
+	11. Geo-Located Tweets. Enhancing Mobility Maps and Capturing Cross-Border Movements
+	Justine I. Blanford , Zhuojie Huang, Alexander Savelyev, Alan M. MacEachren
+	PloS one 10, no. 6 (2015)
+
+	A very recent study which is somehow closely related to our project in term of identifying cross-border mobility of social network users. The research monitors the
+	location of users on location based social networks to capture cross border movements. This interests us as we identify such mobilities with some additional constraints as
+	immigration, and the user would be important for us as an immigrant. Moreover, the research also analyzes twitter accounts and the location of the tweets as well. This
+	shows some hope that our proposed methodology to identify immigrants on Twitter based on the location of their tweets might work. This research paper needs further careful
+	study. 
+
+
+
+
+###Related works in regard to identifying social behavioral and psychological features of users on Twitter (Sentiment Analysis on Tweets):
 
 The second problem in this project is to find a methodology to anticipate psychological features of a twitter user, in particular depression. While the goal is for twitter accounts, other proposed approaches that analyzes the sentiment and behaviour of a user based on their web contents might be interested for us as well. Researches done in the fields of Sociology and Psychology are also considered for this purpose. 
 
@@ -63,37 +93,56 @@ The second problem in this project is to find a methodology to anticipate psycho
 	This is another research done in sentiment analysis of tweets. The proposed methodology has three major phases; preprocessing, scoring, and design of a Tree Kernel. The preprocessing is done to organize emoticons, URLs, user mentions, and acronyms such as LOL and gr8. The second phase is to score each word based on being positive or negative using a dictionary of 8000 words that are already scored and WordNet. Finally, they build a tree of each tweet and score a tweet based on a large list of proposed features.
 
 
-##Conclusion of the week
+###Related work on Socialogy:
+
+####1.Immigration and Suicide: the role of marital status, duration of residence, and social integration 
+published by PubMed.gov
+Authors: Kposowa AJ, McElvain JP, Breault KD.
+http://www.ncbi.nlm.nih.gov/pubmed/18240038
+
+This is a related study with a similar-to-ours goal of finding the relation between immigration and psychological features. The research however focuses on the suicide rate of immigrants in California and indicated that the risk of suicide between immigrants is more than twice of the natives. One very interesting parameter that they studies was the duration of residence of the immigrants. The paper argued that the rate of suicide decreases as the duration of residence in the United States increases. This illustrates that the more socially integrated the immigrants become, the less likely it is for them to commit suicide. 
+We are able to borrow the idea of studying the duration of residence of the government in our research as well. As long as we identify an immigrant Twitter account, it wouldn’t be too difficult to calculate the duration of their residence in the host country. 
+
+####2.Suicide Rates among Immigrants to the US and in their Former Country
+http://suicidemethods.info/tables/immgrant.htm
+The data collected by WHO (World Health Statistics Annual) show how the rate of suicide in immigrants have increased for almost every nationality when they moved to the United States. 
+
+####3.Suicide in Canada's immigrant population
+Published by PubMed.gov
+Author: Malenfant EC
+http://www.ncbi.nlm.nih.gov/pubmed/15151027
+
+The study argues that the suicide rate in immigrants to Canada have generally increased compared with the suicide rate in their home country. The result suggests that the immigration has probably caused depression, and anxiety. 
+
+####4.Suicide in Immigrants: An Overview
+Open Journal of Medical Psychology, 2013, 2, 124-133 
+Authors: Katarzyna Anna Ratkowska, Diego De Leo
+http://dx.doi.org/10.4236/ojmp.2013.23019
+
+This paper investigates the rate of suicide and the complexity of several parameters impacting the fact that immigration has increased the rate of suicide. Globalization, acculturation and acculturation stress, genetic and environmental factors, urbanization and ethnic density, first or second generation of immigrants, being in adolescents, and being a refugee and asylum seeker, are among the primary parameters discussed in this research that might be the cause of increased suicide and depression rate between immigrants. 
+
+
+####5.The Influences of Place of Birth and Socioeconomic Factors on Attempted Suicide in a Defined Population of 4.5 Million People
+Jeanette Westman, Jan Hasselström, Sven-Erik Johansson, Jan Sundquist
+http://archpsyc.jamanetwork.com/article.aspx?articleid=207351&resultClick=3
+
+The research categorized the suicides attempts in Sweden based on the place of birth and gender of the person who attempted the suicide. We divided the number of attempted suicides to the total population of immigrants for each home country in Sweden, to calculate the rate of suicides for in immigrants based on their home country. The result illustrated that the suicide rate for immigrants from almost every country is more than the native swedish people. For example the suicide rate of Iranian immigrants in Sweden is twice more than the rate of native people of Sweden, in spite of the fact that the suicide rate of native Iranians living in Iran is half the suicide rate of people from Sweden. 
+
+####6.Migration from Mexico to the United States and Subsequent Risk for Depressive and Anxiety Disorders
+Authors: Stephanie R. Potochnick, Krista M. Perreira
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3139460/
+
+The research actively monitored the psychological features of more than 500 Mexican immigrants in the United States and concluded that “After arrival in the United States, migrants had a significantly higher risk for first onset of any depressive or anxiety disorder than did non-immigrant family members of migrants in Mexico.” 
+
+
+
+##Conclusion of the week (1/18/2016)
 
 In conclusion, I feel a bit more comfortable about finding a methodology for sentiment analysis of tweets in order to identify depression in Twitter accounts. However, my major concern is about the first research question on how to recognize immigrants on Twitter. 
 
-##Additional Literature Review:
+##Conclusion of the week (2/1/2016)
 
-	8. An Empirical Study of Geographic User Activity Patterns in Foursquare
-	Authors: Anastasios Noulas, Salvatore Scellato, Cecilia Mascolo, Massimiliano Pontil
-	Association for the Advancement of Artificial Intelligence, 2011
+	
 
-	The research studies users’ activities on Foursquare social network where users are able to check in their locations. The study attempts to identify a correlation between the location of the users and their activities to build a framework for a potential recommendation system. Geolocating the users are solely based on the coordination of the users that they set manually by checking in on the app. This is similar to Twitter’s tweets location. However, Twitter users tend to turn off their location more than Foursquare users. 
-
-
-	9.Exploring Millions of Footprints in Location Sharing Services
-	Authors: Zhiyuan Cheng, James Caverlee, Kyumin Lee, Daniel Z. Sui
-	Association for the Advancement of Artificial Intelligence, 2011
-
-	The focus of this research is location based social network such as Foursquare, and Facebook to study the locations of social network users with a goal of building a human mobility pattern. This study also considers the manually set check-ins from the users in social networks for to identify the location of the users. This is how their approach is different from content-based geo-location systems. 
-
-
-	10. A Tale of Many Cities: Universal Patterns in Human Urban Mobility
-	Authors:  Anastasios Noulas ,Salvatore Scellato,Renaud Lambiotte,Massimiliano Pontil,Cecilia Mascolo
-	PloS one 7, no. 5 (2012)
-
-	This is yet a another research in shaping human mobility based on their locations on social networks. Again, the locations are based on what the users manually set by checking in on social networks such as Foursquare and Facebook. The result of the paper is a proposed model for human mobility patterns in urban metropolitan cities. 
-
-
-	11. Geo-Located Tweets. Enhancing Mobility Maps and Capturing Cross-Border Movements
-	Justine I. Blanford , Zhuojie Huang, Alexander Savelyev, Alan M. MacEachren
-	PloS one 10, no. 6 (2015)
-
-	A very recent study which is somehow closely related to our project in term of identifying cross-border mobility of social network users. The research monitors the location of users on location based social networks to capture cross border movements. This interests us as we identify such mobilities with some additional constraints as immigration, and the user would be important for us as an immigrant. Moreover, the research also analyzes twitter accounts and the location of the tweets as well. This shows some hope that our proposed methodology to identify immigrants on Twitter based on the location of their tweets might work. This research paper needs further careful study. 
-
+	
 
