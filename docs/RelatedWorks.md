@@ -166,7 +166,7 @@ Bayes classifier.
 
 Moreover, the literature review gave me the idea of investigating immigrants’ duration of residence in the new country as one of the parameters in my research project. 
 
-In a nutshell, the conclusion is that I will focus on the United States as the host country primarily for the following reasons; 
+In a nutshell, the conclusion is that I will focus on the United States as the host country primarily for the following reasons:
 	- Large number of supporting researches and data 
 	- English speaking country would help find English tweets 
 	- Large number of immigrants every year with diverse countries of origins 
