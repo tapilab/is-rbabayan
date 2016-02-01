@@ -1,8 +1,8 @@
-#Topic: What is the relation between depression and immigration based on users’ tweets
+##Topic: What is the relation between depression and immigration based on users’ tweets
 
-##I splitted the project topic into two major questions:
-####1. How can we determine if a twitter user is an immigrant in order to build a set of tweets made by immigrants. 
-####2. How can we determine the sentiment and social behaviour of a particular twitter account based on their tweets to determine if they suffer from a level of depression or not. 
+###I splitted the project topic into two major questions:
+1. How can we determine if a twitter user is an immigrant in order to build a set of tweets made by immigrants. 
+2. How can we determine the sentiment and social behaviour of a particular twitter account based on their tweets to determine if they suffer from a level of depression or not. 
 
 ###Related works in regard to finding immigrants on twitter: 
 
@@ -70,26 +70,36 @@ American Journal of Applied Psychology, 2014, Vol. 2, No. 5, pp 109-113
 The goal of this research is to determine if online tweets represent the idea and opinions of the person who submitted them on twitter. For instance in this research they considered the issue of immigration and concluded that by analyzing the tweets one sent, we are able to determine if they are in favor or opposed to the issue. The analysis and categorizing the tweets however, were done mostly manually to determine if a tweet is positive or negative about the issue. 
 
 
-####2.Where do my emotions belong? A study of immigrants’ emotional acculturation
+####2. Where do my emotions belong? A study of immigrants’ emotional acculturation
 Authors: Jozefian De Leersnyder, Batia Mesquita, Heejung S. Kim
 Personality and Social Psychology Bulletin 37(4) 451-463
 
 This is another psychological research done manually and based on direct interaction with people and might not be very closely related to our project. Nevertheless, the research revolves around a similar research question as what we are targeting, which is the impact of immigration on one’s psychological feature. The research studied Korean immigrants in the US, and Turkish immigrants in Belgium, with this research assumption that the emotional experiences of people who live together become similar. The result show that an emotional acculturation exist in immigrants. 
 
 
-####3.Twitter Sentiment Analysis: The Good the Bad and the OMG!
+####3. Twitter Sentiment Analysis: The Good the Bad and the OMG!
 Authors: Efthymios Kouloumpis, Theresa Wilson, Johanna Moore
 In the Proceedings of the Fifth International AAAI Conference on Weblogs and Social Media
 
 This is a short paper, but well cited about application of Sentiment Analysis from Natural Language Processing in Twitter. It is argued that previous researches in this regard explored the use of Part-of-Speech features and were not significantly successful due to the incredible breadth of topic that tweets of a user cover. Therefore, they focused on hashtags used in tweets to mine the sentiment of the tweets, besides lexicon, n-gram, and Part-of-Speech features. The combination of all features resulted in the best performance in term of accuracy based on a training data. 
 
 
-####4.Sentiment Analysis of Twitter Data
+####4. Sentiment Analysis of Twitter Data
 Authors: Apoorv Agarwal, Boyi Xie, Illia Vovsha, Owen Rambow, Rebecca Passonneau
 In the Proceedings of the Workshop on Language in Social Media (LSM 2011), Portland, Oregon 
 
 This is another research done in sentiment analysis of tweets. The proposed methodology has three major phases; preprocessing, scoring, and design of a Tree Kernel. The preprocessing is done to organize emoticons, URLs, user mentions, and acronyms such as LOL and gr8. The second phase is to score each word based on being positive or negative using a dictionary of 8000 words that are already scored and WordNet. Finally, they build a tree of each tweet and score a tweet based on a large list of proposed features.
 
+####5. Modeling Public Mood and Emotion: Twitter Sentiment Socio-Economic Phenomena:
+One of the goal of this paper is to find the mood of tweets. This paper used Profile of 
+Mood States psychometric instrument which measures six individual dimensions of 
+mood (Tension, Depression, Anger, Vigour, Fatigue, Confusion). After data preparation and 
+normalizing tweets, the unit mood vector is produced which shows the total score of each 
+tweet based on 6 dimensions.
+
+####6. Twitter as a Corpus for  Semantic Analysis and Opinion Mining:
+The purpose of this paper is to build sentiment classifier, which specifies negative, positive 
+and neutral sentiment of texts.  The first step is to collect required corpus. In this paper  tweets are collected with special emoticons. ( “:)” ,“:))”  or  “:(“, ”((“) which show negative and positive sentiment. Then, TreeTagger is used to find POS tags of terms in tweets. After this part they paid attention to the differences between tags distribution. The distribution of POS-tags shows special tags for each positive and negative and neutral sets. Using these information and also construction of n-grams (to handle negation opinion) the sentiment classifier is built using Naive Bayes classifier.	
 
 ###Related work on Socialogy:
 
@@ -134,11 +144,35 @@ The research actively monitored the psychological features of more than 500 Mexi
 
 
 
-##Conclusion of the week (1/18/2016)
+###Conclusion of the week (1/18/2016)
 
 In conclusion, I feel a bit more comfortable about finding a methodology for sentiment analysis of tweets in order to identify depression in Twitter accounts. However, my major concern is about the first research question on how to recognize immigrants on Twitter. 
 
-##Conclusion of the week (2/1/2016)
+###Conclusion of the week (2/1/2016)
+
+####Related to Sentiment Analysis:
+Based on these two papers that I found, I can build the first idea to build sentiment 
+classifier. The POMS can be used to create the very first sets of moods and then 
+TreeTagger can be generated POS-tags of these sets to find the distribution of mood if 
+tweets based on POS-tags. At the end sentiment classifier is produced by using Naive 
+Bayes classifier.
+
+####Related to Socialogy and Project Assumption:
+
+	There is a direct correlation between immigration and psychological features of the immigrants. 
+	It is more likely for immigrants to develop psychological disorders than the native people of a country. 
+	Immigrants tend to have a higher rate of anxiety and depression compared to the people of their home country who have not migrated anywhere. 
+	The duration of the residence of the immigrants in the newer country will decrease the chance of developing a psychological disorder. 
+
+Moreover, the literature review gave me the idea of investigating immigrants’ duration of residence in the new country as one of the parameters in my research project. 
+
+In a nutshell, the conclusion is that I will focus on the United States as the host country primarily for the following reasons; 
+	Large number of supporting researches and data 
+	English speaking country would help find English tweets 
+	Large number of immigrants every year with diverse countries of origins 
+	
+Then the immigrants will be categorized based on their country of origin and the duration of their residence in the United States. The sentiment analysis would be the next phase to detect psychological features before and after the immigration. 
+
 
 	
 
