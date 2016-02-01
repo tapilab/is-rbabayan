@@ -159,18 +159,18 @@ Bayes classifier.
 
 ####Related to Socialogy and Project Assumption:
 
-	There is a direct correlation between immigration and psychological features of the immigrants. 
-	It is more likely for immigrants to develop psychological disorders than the native people of a country. 
-	Immigrants tend to have a higher rate of anxiety and depression compared to the people of their home country who have not migrated anywhere. 
-	The duration of the residence of the immigrants in the newer country will decrease the chance of developing a psychological disorder. 
+	- There is a direct correlation between immigration and psychological features of the immigrants. 
+	- It is more likely for immigrants to develop psychological disorders than the native people of a country. 
+	- Immigrants tend to have a higher rate of anxiety and depression compared to the people of their home country who have not migrated anywhere. 
+	- The duration of the residence of the immigrants in the newer country will decrease the chance of developing a psychological disorder. 
 
 Moreover, the literature review gave me the idea of investigating immigrants’ duration of residence in the new country as one of the parameters in my research project. 
 
 In a nutshell, the conclusion is that I will focus on the United States as the host country primarily for the following reasons; 
-	Large number of supporting researches and data 
-	English speaking country would help find English tweets 
-	Large number of immigrants every year with diverse countries of origins 
-	
+	- Large number of supporting researches and data 
+	- English speaking country would help find English tweets 
+	- Large number of immigrants every year with diverse countries of origins 
+
 Then the immigrants will be categorized based on their country of origin and the duration of their residence in the United States. The sentiment analysis would be the next phase to detect psychological features before and after the immigration. 
 
 
