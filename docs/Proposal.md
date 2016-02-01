@@ -6,9 +6,11 @@
 
 ##How?
 
-	Immigration duration: being in the new country at least 3 month or more.
-	check for immigrants in past two years. (immigrated in past two years)
-	check users who have tweets in past two years. If they have tweets from the destination country for 3 months or more, consider them as immigrants. We should save that user for sentiment analysis.
+	Immigrants are those twitter accounts who have had a change in their location of the tweets to a location within the United States from another country. 
+	Calculate the duration of residence in the United States. 
+	Check for immigrants in past two years. (immigrated in past two years)
+	Check users who have tweets in past two years. If they have tweets from the destination country for 3 months or more, consider them as immigrants. We should save that user for sentiment analysis. The reason that the 3 months period is chosen is becuase of the fact that most of the tourist type visas have a maximum of 3-month length. This would help us to avoid identifyint tourists as immigrants. 
+	
 
 ##How much data?
 
@@ -33,7 +35,7 @@ We are facing different type of issues in this topic.
 
 
 ##How will it be evaluated?
-*Needs further discussion*
+	The evaluation will be done for the sentiment analysis using a classifier evaluator based on the fact the accuracy of the sentiment classifer. 
 
 ##Rough timeline (also add milestones)
 
