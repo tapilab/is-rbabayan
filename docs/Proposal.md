@@ -30,11 +30,11 @@ Optimistically, it would be great if we could identify at least 100 immigrants o
 We are facing different type of issues in this topic. 
 
 1. Finding the location of users
-a. Some of users has public information about their profile user
-b. If the former method fails, using  the approach discussed in [1]
+	a. Some of users has public information about their profile user
+	b. If the former method fails, using  the approach discussed in [1]
 
 2. Sentiment analysis on immigrants’ tweets
-I will mix approaches disscused on [2] and [3] to build a sentiment classifier. Then sentiment analysis will be done using the classifier
+	I will mix approaches disscused on [2] and [3] to build a sentiment classifier. Then sentiment analysis will be done using the classifier
 
 
 ###How will it be evaluated?
