@@ -90,14 +90,20 @@ In the Proceedings of the Workshop on Language in Social Media (LSM 2011), Portl
 
 This is another research done in sentiment analysis of tweets. The proposed methodology has three major phases; preprocessing, scoring, and design of a Tree Kernel. The preprocessing is done to organize emoticons, URLs, user mentions, and acronyms such as LOL and gr8. The second phase is to score each word based on being positive or negative using a dictionary of 8000 words that are already scored and WordNet. Finally, they build a tree of each tweet and score a tweet based on a large list of proposed features.
 
-####12. Modeling Public Mood and Emotion: Twitter Sentiment Socio-Economic Phenomena:
+####12. Modeling public mood and emotion: Twitter sentiment and socio-economic phenomena
+Authors: Bollen, Johan, Huina Mao, and Alberto Pepe.  
+ICWSM 11 (2011): 450-453
+
 One of the goal of this paper is to find the mood of tweets. This paper used Profile of 
 Mood States psychometric instrument which measures six individual dimensions of 
 mood (Tension, Depression, Anger, Vigour, Fatigue, Confusion). After data preparation and 
 normalizing tweets, the unit mood vector is produced which shows the total score of each 
 tweet based on 6 dimensions.
 
-####13. Twitter as a Corpus for  Semantic Analysis and Opinion Mining:
+####13. Twitter as a Corpus for Sentiment Analysis and Opinion Mining
+Authors: Pak, Alexander, and Patrick Paroubek 
+LREc. Vol. 10. 2010.
+
 The purpose of this paper is to build sentiment classifier, which specifies negative, positive 
 and neutral sentiment of texts.  The first step is to collect required corpus. In this paper  tweets are collected with special emoticons. ( “:)” ,“:))”  or  “:(“, ”((“) which show negative and positive sentiment. Then, TreeTagger is used to find POS tags of terms in tweets. After this part they paid attention to the differences between tags distribution. The distribution of POS-tags shows special tags for each positive and negative and neutral sets. Using these information and also construction of n-grams (to handle negation opinion) the sentiment classifier is built using Naive Bayes classifier.	
 
@@ -170,7 +176,7 @@ Then the immigrants will be categorized based on their country of origin and the
 
 ####Related to Sentiment Analysis:
 
-Based on two papers that I found, I can build the first idea to build sentiment 
+Based on two papers that I found [12] and [13], I can build the first idea to build sentiment 
 classifier. The POMS can be used to create the very first sets of moods and then 
 TreeTagger can be generated POS-tags of these sets to find the distribution of mood if 
 tweets based on POS-tags. At the end sentiment classifier is produced by using Naive 
