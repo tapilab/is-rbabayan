@@ -29,11 +29,14 @@ Optimistically, it would be great if we could identify at least 100 immigrants o
 
 We are facing different type of issues in this topic. 
 
-####1. Finding the location of users. 
+1. Finding the location of users
+
 a. Some of users has public information about their profile user.
+
 b. If the former method fails, using  the approach discussed in [1]
 
-####2. Sentiment analysis on immigrants’ tweets.
+2. Sentiment analysis on immigrants’ tweets
+
 I will mix approaches disscused on [2] and [3] to build a sentiment classifier. Then sentiment analysis will be done using the classifier
 
 
@@ -51,5 +54,7 @@ The evaluation will be done for the sentiment analysis using a classifier evalua
 ###References
 
 [1] Zhiyuan Cheng, James Caverlee, Kyumin Lee, “You are where you tweet: a content-based approach to geo-locating Twitter users”, CIKM’10, Toronto, Canada, 2010
+
 [2] Pak, Alexander, and Patrick Paroubek. "Twitter as a Corpus for Sentiment Analysis and Opinion Mining." In LREc, vol. 10, pp. 1320-1326. 2010
+
 [3] Bollen, Johan, Huina Mao, and Xiaojun Zeng. "Twitter mood predicts the stock market." Journal of Computational Science 2, no. 1 (2011): 1-8
