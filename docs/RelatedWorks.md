@@ -176,7 +176,7 @@ Then the immigrants will be categorized based on their country of origin and the
 
 ####Related to Sentiment Analysis:
 
-Based on two papers that I found [12] and [13], I can build the first idea to build sentiment 
+Based on two papers that I found [12] and [13], I built the first idea to produce sentiment 
 classifier. The POMS can be used to create the very first sets of moods and then 
 TreeTagger can be generated POS-tags of these sets to find the distribution of mood if 
 tweets based on POS-tags. At the end sentiment classifier is produced by using Naive 
