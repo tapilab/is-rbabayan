@@ -182,6 +182,58 @@ TreeTagger can be generated POS-tags of these sets to find the distribution of m
 tweets based on POS-tags. At the end sentiment classifier is produced by using Naive 
 Bayes classifier.
 
+-----
+
+####20. Characterizing and Predicting Postpartum Depression from Shared Facebook Data
+Munmun De Choudhury, Scott Counts, Eric Horvitz, Aaron Hoff
+Microsof Research, Redmond WA
+http://research.microsoft.com/en-us/um/people/horvitz/FB-cscw2014.pdf
+
+This is a very interesting research that comprehensively analyzed Facebook activities of new mothers to predict their chance of postpartum depression (PPD). 
+My observations and conclusions; 
+
+1. The researchers conducted an online survey to collect information about PPD experiences of new mothers and gained their permission to access their Facebook account and data. They were 165 mothers. They also recruited a subset of them to conduct a validation interview to capture their experiences more precisely in order to validate the findings of the study. 
+This is fundamentally different from how we are collecting candidates of immigrants on Twitter. 
+
+2. They took demographic features of the mothers into the account, such as age, income, ethniety, and occupation. While we don't have access to all such information for immigrants on twitter, we can categorize our study based on the source and destination countries. 
+
+3. Facebook data enabled the researchers to consider users' activities such as likes, comments, page follows, media contents, etc in theri analysis. This information are not available in Twitter but their approach may give us this idea to consider immigrants' rate of tweeting before and after immigration as one of the potential feature of the problem. We can look into that to see if it gives us a meaningful measure. 
+
+The research was a progress on top of their earlier research on Twitter data. The next paper is the earlier study. 
+
+####21. Predicting Postpartum Changes in Emotion and Behavior via Social Media
+Munmun De Choudhury, Scott Counts, Eric Horvitz
+Microsoft Research, Redmond WA
+http://research.microsoft.com/en-us/um/people/horvitz/predicting_postpartum_changes_chi_2013.pdf
+
+This is a very closely related research that seeks new mothers on twitter and analzye changes in their emotion and behavior after they gave birth to their babies. 
+
+Data Collection: 2 phases; 
+
+1. Queries on Twitter Firehose (available to Microsoft only) to find potential new mother twitter accounts 
+2. Using Amazon's Mechanical Turk to identify real new mothers 
+
+Measures of Behavioral Changes; 
+
+1. Engagement: 
+   - Number of posts per day 
+   - Number of replies per day 
+   - Number of retweets per day 
+2. Ego-network: 
+   - Number of followers 
+   - Numbef of followees 
+3. Emotion: 
+   - Positive Affect (PA): achieved using LIWC lexicon 
+   - Negative Affect (NA): achieved using LIWC lexicon 
+   - Activation: achieved using ANEW lexicon 
+   - Dominance: achievd using ANEW lexicon 
+4. Linguistic Style: 
+   - 22 specific linguistic styles achieved by LIWC lexicon
+
+Decisions/Ideas out of this paper: 
+
+1. Although we don't have access to Twitter Firehose API, it is best to look more into Twitter Search API to search for specific keywords. 
+2. The measures of behavioral changes that they used can all be used by us as well. I will investigate how these measures can be used and calculated. 
 
 
 
