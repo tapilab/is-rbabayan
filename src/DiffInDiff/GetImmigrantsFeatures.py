@@ -37,7 +37,7 @@ class UserFeature(object):
         print('followers count: ', str(self.followers_count))
         print('gender: ', str(self.gender))
         print('Number of tweets:', str(len(self.tweets_dates)))
-        print('Number of replies:', str(len(self.replies_dates)))
+        print('Number of teploes:', str(len(self.replies_dates)))
         print('**********************************')
 
 
@@ -65,15 +65,14 @@ class Immigrant(object):
 def load_census():
     female_url = "http://www2.census.gov/topics/genealogy/1990surnames/dist.female.first"
     male_url = "http://www2.census.gov/topics/genealogy/1990surnames/dist.male.first"
-                
+    
     female_request = urllib.request.urlopen(female_url)
     male_request = urllib.request.urlopen(male_url)
 
     line2name = lambda x: x.decode('utf-8').split()[0].lower() if x else ''
-    
+
     females = []
     males = []
-    
     for line in female_request:
         females.append(line2name(line).lower())
 
@@ -84,11 +83,11 @@ def load_census():
     set_female = set(females)
 
     set_ambiguous = set_female & set_male
+
     set_female -= set_ambiguous
     set_male -= set_ambiguous
 
     return set_male, set_female
-
 
 def get_gender_api(name):
     print('API had to be called')
@@ -101,13 +100,13 @@ def get_gender_api(name):
         print(str(e))
         return None
 
+
 def get_gender(male_names, female_names, name):
     name = name.lower()
     if name in male_names:
         return 'male'
     elif name in female_names:
         return 'female'
-    
     gender = get_gender_api(name)
     if gender is not None:
         return gender
@@ -121,28 +120,48 @@ male_names, female_names = load_census()
 
 immigrants = os.listdir(sys.argv[1])
 all_users = os.listdir(sys.argv[2])
-non_immigrants = [i for i in all_users if i not in immigrants]
 
-candidates = []
+already_dones = os.listdir('ImmigrantsFeatures/')
+
+#imm_features = []
 i = 0
-for user in non_immigrants:
+for user in immigrants:
     try:
         f = open(sys.argv[2] + user, 'rb')
         tweets = pickle.load(f)
         f.close()
 
-
-        if tweets[0].user.lang != 'en':
+        if user in already_dones:
+            print('Already processed: ' + user)
             continue
 
+        #ignore non english users:
+        if tweets[0].user.lang != 'en':
+            continue 
+
         name = tweets[0].user.name.split(' ')[0].lower()
+#        print(name + ' ' + str(len(name)))
         gender = get_gender(male_names, female_names, name)
+#        print(gender)
+
+        if gender == 'unknown':
+            print('COULD NOT GET GENDER FOR: ' + str(user) + ' - ' + str(tweets[0].user.screen_name))
+            g = input('male or female?:')
+            if g == '1':
+                print('Male saved')
+                gender = 'male'
+            elif g == '0':
+                print('Female saved')
+                gender = 'female'
+            else:
+                print('Unknown Saved')
+                gender = 'unknown'
 
         replies_dates = []
         dates = []
         locations = []
         for tweet in tweets:
-            if tweet.in_reply_to_user_id != None: 
+            if tweet.in_reply_to_user_id != None:
                 replies_dates.append(tweet.created_at)
             dates.append(tweet.created_at)
             if tweet.place is not None:
@@ -151,29 +170,24 @@ for user in non_immigrants:
             location, no = Counter(locations).most_common(1)[0]
     
             features = UserFeature(user, location, tweets[0].user.followers_count, gender, dates, replies_dates)
-            candidates.append(features)
+#            imm_features.append(features)
 
-
-        #print("No location info available for this user")
-
-        if len(candidates) == 1000:
-            f = open("Candidates2/candidates_" + str(i), "wb")
-            pickle.dump(candidates, f)
-            f.close()
-            candidates = []
-            print("************* An output file saved")
+            file_output = open('ImmigrantsFeatures/' + user, 'wb')
+            pickle.dump(features, file_output)
+            file_output.close()
 
         i += 1
-        print(str(len(candidates)) + ' from ' + str(i))
+        print(str(i))
+
+ #       print(str(len(imm_features)) + ' from ' + str(i))
     except Exception as e:
-        print("Exception Handled!")
+        print("Exception Handled:")
         print(str(e))
         pass
 
-if len(candidates) > 0:
-    f = open("Candidates2/candidates_" + str(i), "wb")
-    pickle.dump(candidates, f)
-    f.close()
+#f = open("ImmigrantsFeatures_objs", "wb")
+#pickle.dump(imm_features, f)
+#f.close()
 
 '''
 candidates_filenames = os.listdir("Candidates/")
